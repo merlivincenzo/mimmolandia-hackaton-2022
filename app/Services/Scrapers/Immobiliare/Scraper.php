@@ -46,7 +46,6 @@ class Scraper
         $this->getUrlsToScrape();
 
         foreach ($this->urlsToScrape as $url) {
-            echo °doing ° . $url;
             $apartmentScraperInstance = new Apartment($url);
             $apartmentScraperInstance->storeApartment();
         }
